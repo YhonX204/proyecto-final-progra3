@@ -49,15 +49,5 @@ solve minimize ultimo_sem;
 output [
     "=== PLAN DE ESTUDIOS OPTIMIZADO ===\n",
     "Semestres totales: \(ultimo_sem)\n\n",
-    forall(s in 1..MAX_SEMESTRES)(
-        let {
-            array[int] of string: mats = [CODIGO[i] | i in 1..N where S[i] == s],
-            int: carga = sum(i in 1..N)(if S[i] == s then CREDITOS[i] else 0 endif)
-        } in
-            if length(mats) > 0 then
-                "Semestre \(s) [\(carga) créditos]: " ++ show(mats) ++ "\n"
-            else
-                ""
-            endif
-    )
+    "S = ", show(S), "\n"
 ];
