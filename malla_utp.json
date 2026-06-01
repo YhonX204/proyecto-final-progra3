@@ -1,0 +1,69 @@
+[
+  {"codigo": "BA170", "nombre": "Humanidades I", "creditos": 2, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "BU101", "nombre": "Deportes I", "creditos": 1, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "CB1B3", "nombre": "Matemáticas Fundamentales", "creditos": 3, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS142", "nombre": "Desarrollo del Pensamiento Lógico", "creditos": 2, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS193", "nombre": "Introducción a La Informática", "creditos": 3, "prerrequisitos": [], "correquisitos": []},
+  
+  {"codigo": "IS105", "nombre": "Programación I", "creditos": 5, "prerrequisitos": ["IS142"], "correquisitos": []},
+  {"codigo": "CB2A3", "nombre": "Cálculo Diferencial", "creditos": 3, "prerrequisitos": ["CB1B3"], "correquisitos": []},
+  {"codigo": "CB234", "nombre": "Física I", "creditos": 4, "prerrequisitos": ["CB2A3"], "correquisitos": ["CB242"]},
+  {"codigo": "CB242", "nombre": "Laboratorio de Física I", "creditos": 2, "prerrequisitos": ["CB2A3"], "correquisitos": ["CB234"]},
+  {"codigo": "BA372", "nombre": "Humanidades II", "creditos": 2, "prerrequisitos": ["BA170"], "correquisitos": []},
+  
+  {"codigo": "CB223", "nombre": "Álgebra Lineal", "creditos": 3, "prerrequisitos": ["CB1B3"], "correquisitos": []},
+  {"codigo": "CB3A4", "nombre": "Cálculo Integral", "creditos": 4, "prerrequisitos": ["CB2A3"], "correquisitos": []},
+  {"codigo": "CB334", "nombre": "Física II", "creditos": 4, "prerrequisitos": ["CB234", "CB242"], "correquisitos": ["CB342"]},
+  {"codigo": "CB342", "nombre": "Laboratorio de Física II", "creditos": 2, "prerrequisitos": ["CB234", "CB242"], "correquisitos": ["CB334"]},
+  {"codigo": "IS284", "nombre": "Programación II", "creditos": 4, "prerrequisitos": ["IS105"], "correquisitos": []},
+  
+  {"codigo": "CB4A4", "nombre": "Cálculo Multivariado", "creditos": 4, "prerrequisitos": ["CB3A4"], "correquisitos": []},
+  {"codigo": "IS304", "nombre": "Estructura de Datos", "creditos": 4, "prerrequisitos": ["IS284"], "correquisitos": []},
+  {"codigo": "IS482", "nombre": "Teoría de Sistemas", "creditos": 2, "prerrequisitos": ["IS193"], "correquisitos": []},
+  {"codigo": "IS474", "nombre": "Fundamentos de Electrónica", "creditos": 3, "prerrequisitos": ["CB334", "CB342"], "correquisitos": ["IS543"]},
+  {"codigo": "IS543", "nombre": "Laboratorio de Electrónica", "creditos": 2, "prerrequisitos": ["CB334", "CB342"], "correquisitos": ["IS474"]},
+  
+  {"codigo": "CB4A3", "nombre": "Ecuaciones Diferenciales Ordinarias", "creditos": 3, "prerrequisitos": ["CB4A4"], "correquisitos": []},
+  {"codigo": "IS323", "nombre": "Lógica", "creditos": 3, "prerrequisitos": ["IS142", "CB1B3"], "correquisitos": []},
+  {"codigo": "IS453", "nombre": "Programación III", "creditos": 3, "prerrequisitos": ["IS284", "CB223"], "correquisitos": []},
+  
+  {"codigo": "CB434", "nombre": "Física III", "creditos": 4, "prerrequisitos": ["CB334", "CB342", "CB4A4"], "correquisitos": ["CB442"]},
+  {"codigo": "CB442", "nombre": "Laboratorio de Física III", "creditos": 2, "prerrequisitos": ["CB334", "CB342"], "correquisitos": ["CB434"]},
+  {"codigo": "IS405", "nombre": "Gramáticas y Lenguajes Formales", "creditos": 4, "prerrequisitos": ["IS323", "IS304", "CB4A4"], "correquisitos": []},
+  {"codigo": "IS503", "nombre": "Administración de Empresas", "creditos": 3, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS634", "nombre": "Electrónica Digital", "creditos": 3, "prerrequisitos": ["IS474", "IS543"], "correquisitos": ["IS773"]},
+  {"codigo": "IS773", "nombre": "Laboratorio De Electrónica Digital", "creditos": 2, "prerrequisitos": ["IS474", "IS543"], "correquisitos": ["IS634"]},
+  {"codigo": "IS512", "nombre": "Estadística", "creditos": 2, "prerrequisitos": ["CB4A3"], "correquisitos": []},
+  {"codigo": "IS553", "nombre": "Programación IV", "creditos": 3, "prerrequisitos": ["IS453"], "correquisitos": []},
+  
+  {"codigo": "IS184", "nombre": "Técnicas De La Comunicación", "creditos": 2, "prerrequisitos": ["BA372"], "correquisitos": []},
+  {"codigo": "IS614", "nombre": "Arquitectura de Computadores", "creditos": 4, "prerrequisitos": ["IS634", "IS773"], "correquisitos": []},
+  {"codigo": "IS623", "nombre": "Computación Gráfica", "creditos": 3, "prerrequisitos": ["IS553", "CB223", "CB434", "CB442"], "correquisitos": []},
+  {"codigo": "IS644", "nombre": "Base De Datos I", "creditos": 4, "prerrequisitos": ["IS304", "IS284", "IS405"], "correquisitos": []},
+  {"codigo": "IS692", "nombre": "Estadística Especial", "creditos": 2, "prerrequisitos": ["IS512"], "correquisitos": []},
+  
+  {"codigo": "IS653", "nombre": "Investigación de Operaciones", "creditos": 3, "prerrequisitos": ["CB4A4", "IS512"], "correquisitos": []},
+  {"codigo": "IS714", "nombre": "Ingeniería de Software I", "creditos": 4, "prerrequisitos": ["IS453", "IS304", "IS644"], "correquisitos": []},
+  {"codigo": "IS723", "nombre": "Comunicaciones I", "creditos": 3, "prerrequisitos": ["CB4A3", "IS482"], "correquisitos": []},
+  {"codigo": "IS734", "nombre": "Sistemas Operativos I", "creditos": 4, "prerrequisitos": ["IS453", "IS614"], "correquisitos": []},
+  
+  {"codigo": "IS753", "nombre": "Compiladores", "creditos": 3, "prerrequisitos": ["IS405", "IS453", "IS553"], "correquisitos": []},
+  {"codigo": "IS784", "nombre": "Inteligencia Artificial", "creditos": 3, "prerrequisitos": ["IS405", "IS512"], "correquisitos": []},
+  {"codigo": "IS884", "nombre": "Ingeniería de Software II", "creditos": 4, "prerrequisitos": ["IS714"], "correquisitos": []},
+  {"codigo": "IS842", "nombre": "Legislación, Ética y Contratación", "creditos": 2, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS053", "nombre": "Gerencia De Proyectos", "creditos": 3, "prerrequisitos": ["IS714"], "correquisitos": []},
+  {"codigo": "IS845", "nombre": "Computación Blanda", "creditos": 4, "prerrequisitos": ["IS512", "IS692"], "correquisitos": []},
+  {"codigo": "IS873", "nombre": "Laboratorio Del Software", "creditos": 3, "prerrequisitos": ["IS714", "IS734"], "correquisitos": []},
+  {"codigo": "IS893", "nombre": "Sistemas Distribuidos", "creditos": 3, "prerrequisitos": ["IS723", "IS734", "IS884"], "correquisitos": []},
+  {"codigo": "IS953", "nombre": "Administración De Proyectos de Software", "creditos": 3, "prerrequisitos": ["IS053", "IS884"], "correquisitos": []},
+  
+  {"codigo": "IS924", "nombre": "Arquitectura Cliente-Servidor", "creditos": 4, "prerrequisitos": ["IS644", "IS734", "IS893"], "correquisitos": []},
+  {"codigo": "IS962", "nombre": "Proyecto de Grado I", "creditos": 2, "prerrequisitos": ["IS884", "IS953"], "correquisitos": []},
+  {"codigo": "IS023", "nombre": "Auditoría de Sistemas", "creditos": 3, "prerrequisitos": ["IS714", "IS884"], "correquisitos": []},
+  {"codigo": "IS9A0", "nombre": "Electiva A1", "creditos": 6, "prerrequisitos": ["IS714"], "correquisitos": []},
+  
+  {"codigo": "IS031", "nombre": "Constitución Política", "creditos": 1, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS066", "nombre": "Proyecto De Grado II", "creditos": 6, "prerrequisitos": ["IS962"], "correquisitos": []},
+  {"codigo": "ISEMP", "nombre": "Emprendimiento", "creditos": 3, "prerrequisitos": [], "correquisitos": []},
+  {"codigo": "IS0A0", "nombre": "Electiva A2", "creditos": 6, "prerrequisitos": ["IS714"], "correquisitos": []}
+]
